@@ -101,10 +101,11 @@ main {
     -o-border-radius: .5rem;
 }
 
-.social-links-profile__p {
+.social-links-profile__a {
     opacity: 0.9;
     font-size: .8rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .social-links-profile__btn:hover,
