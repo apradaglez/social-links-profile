@@ -1,3 +1,103 @@
+:root {
+    --bg-body: rgb(20, 20, 20);
+    --bg-social-links: rgb(31, 31, 31);
 
+    --clr-primary: rgb(255, 255, 255);
+    --clr-secondary: hsl(100, 68%, 75%);
+    --clr-btn-links: rgb(61, 60, 60);
+
+}
+
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype'),
+    url('..fonts/Inter-VariableFont_slnt.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-size: 16px;
+    font-family:'Inter-VariableFont', Arial, Helvetica, sans-serif;
+    color: var(--clr-primary);
+}
+
+main {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.social-links-profile__section {
+    display: grid;
+    gap: 1.2rem;
+    width: 21.5rem;
+    max-width: 90%;
+    border-color: 1px solid white;
+    background-color: var(--bg-social-links);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 2rem;
+}
+
+.social-links-profile__header {
+    display: grid;
+    gap: .5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-links-profile__img {
+    width: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social-links-profile__h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--clr-primary);
+}
+
+.social-links-profile__h2 {
+    font-size: .75rem;
+    color: var(--clr-secondary);
+}
+
+.social-links-profile__h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--clr-primary);
+    opacity: 0.65;
+    margin-top: .6rem;
+}
+
+.social-links-profile__rrss {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.social-links-profile__btn {
+    display: grid;
+    place-content: center;
+    width: 95%;
+    background-color: var(--clr-btn-links);
+    padding: .7rem 0;
+    font-size: .8rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); } */
